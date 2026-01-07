@@ -26,7 +26,7 @@ function Delete() {
 
     try {
       // Fetch all students first
-      const res = await fetch(`http://localhost:8080/students`);
+      const res = await fetch(`https://student-management-system-backend-jssl.onrender.com/students`);
       const students = await res.json();
 
       // Find student by roll number
@@ -45,7 +45,7 @@ function Delete() {
 
       // Call DELETE API
       const deleteRes = await fetch(
-        `http://localhost:8080/students/${rollno}`,
+        `https://student-management-system-backend-jssl.onrender.com/${rollno}`,
         { method: "DELETE" }
       );
 

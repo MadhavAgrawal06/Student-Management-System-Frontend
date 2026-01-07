@@ -10,7 +10,7 @@ function ShowOne() {
     setStudent(null);
 
     try {
-      const response = await fetch(`http://localhost:8080/students/${rollno}`);
+      const response = await fetch(`https://student-management-system-backend-jssl.onrender.com/${rollno}`);
 
       // Get raw text first (safe even if backend returns empty or non-JSON)
       const text = await response.text();

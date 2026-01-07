@@ -15,7 +15,7 @@ function Update() {
 
     try {
       // Fetch all students
-      const res = await fetch(`http://localhost:8080/students`);
+      const res = await fetch(`https://student-management-system-backend-jssl.onrender.com/students`);
       const students = await res.json();
 
       const student = students.find((s) => s.rollno === parseInt(rollno));
@@ -28,7 +28,7 @@ function Update() {
 
       // Update marks
       const updateRes = await fetch(
-        `http://localhost:8080/students/${student.rollno}`,
+        `https://student-management-system-backend-jssl.onrender.com/${student.rollno}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

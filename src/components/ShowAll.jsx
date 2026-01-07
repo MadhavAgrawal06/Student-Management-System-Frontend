@@ -5,7 +5,7 @@ export default function ShowAll() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8080/students") // Your Spring Boot backend URL
+    fetch("https://student-management-system-backend-jssl.onrender.com/students") // Your Spring Boot backend URL
       .then((res) => res.json())
       .then((data) => {
         setStudents(data);
