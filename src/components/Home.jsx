@@ -37,7 +37,7 @@ function Home(){
       fontWeight: "500",
     }}
   >
-    Implementation Details
+    Project Overview
   </div>
 
   {/* Code Block Section */}
